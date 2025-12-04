@@ -161,13 +161,13 @@ Follow these steps to run the project from scratch.
 
 ### Clone the repository**
 
-git clone https://github.com/YOUR_USERNAME/rag-investment-chatbot.git
-cd rag-investment-chatbot
-python3 -m venv .venv
-source .venv/bin/activate   # macOS/Linux
-.\.venv\Scripts\activate #Windows
-pip install -r requirements.txt
-python -m streamlit run app.py
+- git clone git@github.com:chalapati-rao-neu/rag-investment-chatbot.git
+- cd rag-investment-chatbot
+- python3 -m venv .venv
+- source .venv/bin/activate   # macOS/Linux
+- .\.venv\Scripts\activate #Windows
+- pip install -r requirements.txt
+- python -m streamlit run app.py
 
 
 # App Usage Guide
