@@ -1,0 +1,8 @@
+pandas
+openpyxl
+sentence-transformers
+transformers
+faiss-cpu
+torch
+yfinance
+streamlit
