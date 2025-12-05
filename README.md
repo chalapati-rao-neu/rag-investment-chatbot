@@ -69,7 +69,7 @@ The system consists of three major components:
 ## 1. Retrieval-Augmented Generation (RAG) Layer
 - **Embedding Model:** `sentence-transformers/paraphrase-MiniLM-L6-v2`
 - **Vector Store:** FAISS (Facebook AI Similarity Search)
-- **Generator Model:** `google/flan-t5-large`
+- **Generator Model:** `google/flan-t5-base`
 - **Custom Prompting:** Generates responses in the style/persona of Jesse Livermore
 - **Pipeline Flow:**
   1. Convert all Q&A pairs into embeddings  

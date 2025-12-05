@@ -112,7 +112,7 @@ with tab_chat:
     )
 
 # ==============================
-# TAB 2: BACKTEST STRATEGY (PLACEHOLDER)
+# TAB 2: BACKTEST STRATEGY 
 # ==============================
 
 with tab_backtest:

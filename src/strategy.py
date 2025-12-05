@@ -49,7 +49,7 @@ def download_price_data(
         start=start_ts,
         end=end_ts,
         progress=False,
-        auto_adjust=False,
+        auto_adjust=True,
     )
 
     if df.empty:
@@ -107,7 +107,7 @@ def run_livermore_strategy(
     df[f"{breakout_window}High"] = df["Close"].rolling(window=breakout_window).max()
     df[f"{breakout_window}Low"] = df["Close"].rolling(window=breakout_window).min()
 
-    # Position logic exactly like the notebook
+    # Position logic 
     df["Position"] = 0
 
     buy_condition = (
@@ -122,7 +122,7 @@ def run_livermore_strategy(
     df.loc[sell_condition, "Position"] = -1
     df["Position"] = df["Position"].fillna(0)
 
-    # Returns and "Agg" cumulative sums (not compounded), like ipynb
+    # Returns and "Agg" cumulative sums (not compounded)
     df["Buy-and-Hold Return"] = df["Close"].pct_change()
     df["Strategy Return"] = df["Buy-and-Hold Return"] * df["Position"]
 
